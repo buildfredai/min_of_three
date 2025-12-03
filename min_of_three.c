@@ -9,8 +9,15 @@ int main()
     printf("Enter the third number: ");
     scanf("%d", &c);
 
-    min = c;
-    if (a<min)min = a;
-    if (b<min)min = b;
-    printf("minimum = %d\n", min);
+    if (a<b && a<c){
+        printf("minimum = %d\n", a);
+    }
+    else if (b<a && b<c){
+        printf("minimum = %d\n", b);
+    }
+    else {
+        printf("Minimun = %d\n", c);
+    }
+
+    return 0;
 }
