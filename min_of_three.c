@@ -9,6 +9,8 @@ int main()
     printf("Enter the third number: ");
     scanf("%d", &c);
 
-    min = a<b ? (a<c? a:c):(b<c? b:c);
+    min = c;
+    if (a<min)min = a;
+    if (b<min)min = b;
     printf("minimum = %d\n", min);
 }
